@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+   mysqldb:
+     image: mysql:latest
+     environment:
+      MYSQL_DATABASE: userdb
+      MYSQL_USER: root2
+      MYSQL_PASSWORD: Play1993?
+      MYSQL_ROOT_PASSWORD: strongRootPassword
+     networks:
+      - webnet
+
+   websrv:
+     image: lakmerol/dotnetapi
+     depends_on:
+       - mysqldb
+     ports:
+       - "5000:80"
+     restart: always
+     networks:
+       - webnet
+
+   reactclient:
+     image: lakmerol/reactgeo
+     depends_on:
+       - websrv
+     ports:
+       - "3000:81"
+     restart: always
+     networks:
+       - webnet
+
+networks:
+  webnet:
+    driver: bridge

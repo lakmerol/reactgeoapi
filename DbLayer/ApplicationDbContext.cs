@@ -1,0 +1,14 @@
+﻿using DbLayer.Entites;
+using Microsoft.EntityFrameworkCore;
+
+namespace DbLayer
+{
+    public class ApplicationDbContext : DbContext 
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+
+        }
+        public DbSet<User> Users { get; set; }
+    }
+}
