@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\Georgia\\DbLayer\\DbLayer.csproj": {}
+    "d:\\dev\\Georgia\\DbLayer\\DbLayer.csproj": {}
   },
   "projects": {
-    "D:\\dev\\Georgia\\DbLayer\\DbLayer.csproj": {
+    "d:\\dev\\Georgia\\DbLayer\\DbLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\Georgia\\DbLayer\\DbLayer.csproj",
+        "projectUniqueName": "d:\\dev\\Georgia\\DbLayer\\DbLayer.csproj",
         "projectName": "DbLayer",
-        "projectPath": "D:\\dev\\Georgia\\DbLayer\\DbLayer.csproj",
+        "projectPath": "d:\\dev\\Georgia\\DbLayer\\DbLayer.csproj",
         "packagesPath": "C:\\Users\\Erol\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\Georgia\\DbLayer\\obj\\",
+        "outputPath": "d:\\dev\\Georgia\\DbLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
